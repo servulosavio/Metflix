@@ -1,19 +1,15 @@
 package auth;
 
-/**
- *
- * @author servu
- */
 public class Usuario {
     
     private String login;
     private String senha;
-    private NivelAcesso nivel_acesso;
+    private NivelAcesso nivel;
 
-    public Usuario(String login, String senha, NivelAcesso nivel_acesso) {
+    public void Usuario(String login, String senha, NivelAcesso nivel) {
         this.login = login;
         this.senha = senha;
-        this.nivel_acesso = nivel_acesso;
+        this.nivel = nivel;
     }
 
     public String getLogin() {
@@ -32,12 +28,12 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public NivelAcesso getNivel_acesso() {
-        return nivel_acesso;
+    public NivelAcesso getNivel() {
+        return nivel;
     }
 
-    public void setNivel_acesso(NivelAcesso nivel_acesso) {
-        this.nivel_acesso = nivel_acesso;
+    public void setNivel(NivelAcesso nivel) {
+        this.nivel = nivel;
     }
       
 }
