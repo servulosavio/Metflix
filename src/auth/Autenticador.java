@@ -20,9 +20,11 @@ public class Autenticador {
     
     public Usuario logar(String login, String senha) {
         
-        //FALTA IMPLEMENTAR
-        
-        return null;        
-    }
-    
+        for(Usuario user: usuarios){
+            if(user.getLogin() == login && user.getSenha() == senha){
+                return user;
+            }
+        }
+        return null;
+    }    
 }
